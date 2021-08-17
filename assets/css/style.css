@@ -15263,7 +15263,7 @@ header.fixed .navbar {
 @media (min-width: 1600px) {
   /* line 1, ../scss/_main.scss */
   .banner-block {
-    height: 700px;
+    height: 800px;
     padding: 120px 0 0;
   }
 }
