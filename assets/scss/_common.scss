@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto-Black.eot');
+    src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Black.woff2') format('woff2'),
+        url('../fonts/Roboto-Black.woff') format('woff'),
+        url('../fonts/Roboto-Black.ttf') format('truetype'),
+        url('../fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+$font-family1: 'Roboto', sans-serif;
+$font-family2: 'Roboto-Black', $font-family1;
+
+$white: #ffffff;
+$black: #000000;
+$primary_color: #19191b;
+
+body {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font-family1;
+    color: $primary_color;
+    font-weight: 400;
+}
+
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    @include responsive(sm) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @include responsive(xl) {
+        max-width: 1100px;  
+    }
+    @include responsive(xxl) {
+        max-width: 1500px;  
+    }
+    @include responsive(xxxl) {
+        max-width: 2230px;  
+    }
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include responsive(lg) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.btn-orange {
+    padding: 10px;
+    color: $white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    border-radius: 0;
+    background-color: #d95930;
+}
+
+.btn-orange:hover {
+    color: $primary_color;
+    background-color: $white;
+}
+
+.btn-white {
+    padding: 10px;
+    color: $primary_color;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    border-radius: 0;
+    background-color: $white;
+}
+
+.btn-white:hover {
+    color: $white;
+    background-color: #d95930;
+}
+
+.btn-black {
+    padding: 10px;
+    color: $white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    border-radius: 0;
+    background-color: #201c1e;
+}
+
+.btn-black:hover {
+    color: $white;
+    background-color: #d95930;
+}
+
+.btn-orange:focus,
+.btn-white:focus,
+.btn-black:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+// Five Column Structure
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+// Custom Checkbox
+.list-left-block {
+    .form-group {
+        margin-bottom: 10px;
+        label {
+            margin: 0;
+            color: #38464D;
+            font-size: 14px;
+            line-height: 14px;
+            position: relative;
+            cursor: pointer;
+            @include responsive(lg) {
+                font-size: 12px;
+                line-height: 12px;
+            }
+            @include responsive(xl) {
+                font-size: 14px;
+                line-height: 14px;
+            }
+            &:before {
+                content:'';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 1px solid #C4C4C4;
+                padding: 7px;
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                cursor: pointer;
+                margin-right: 10px;
+                border-radius: 2px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+            }
+        }
+        input {
+            padding: 0;
+            height: initial;
+            width: initial;
+            margin-bottom: 0;
+            display: none;
+            cursor: pointer;
+            &:checked + label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                border: 5px solid #FF0909;
+                border-radius: 1px;
+                padding: 1px;
+            }
+        }
+    }
+}

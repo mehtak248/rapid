@@ -1,0 +1,49 @@
+footer {
+    padding: 20px 0;
+    @include responsive(xl) {
+        padding: 50px 0;
+    }
+    .footer-left-block {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .footer-logo {
+            @include responsive(md) {
+                margin-right: 25px;
+            }
+        }
+    }
+    p {
+        margin: 0;
+        color: #201c1e;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 300;
+        @include responsive(xxl) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .contact-number {
+        margin: 0;
+        color: #201c1e;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        @include responsive(xl) {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        @include responsive(xxl) {
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+    .button-block {
+        .btn-orange {
+            @include responsive(md) {
+                margin-right: 10px;
+            }
+        }
+    }
+}

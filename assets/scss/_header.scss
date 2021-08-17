@@ -1,0 +1,106 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    background: $white;
+    -webkit-transition: position 0.2s; 
+    -moz-transition: position 0.2s; 
+    -ms-transition: position 0.2s; 
+    -o-transition: position 0.2s; 
+    transition: position 0.2s;
+    border-top: 10px solid #d95930;
+    @include responsive(xxxl) {
+        border-top: 21px solid #d95930;
+    }
+    .navbar {
+        padding: 20px 0;
+        @include responsive(xxxl) {
+            padding: 59px 0;
+        }
+        .navbar-brand {
+            padding: 0;
+            max-width: 150px;
+        }
+        .navbar-toggler {
+            &:focus,
+            &:hover {
+                border: 0;
+                outline: 0;
+            } 
+            .navbar-toggler-icon {
+                width: 20px;
+                height: 17px;
+                background-image: url(../images/hamburger.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: inline-block;
+            }
+        } 
+        .navbar-collapse {
+            background: rgb(255, 255, 255);
+            padding: 20px 0px;
+            margin: 18px 0 0;
+            @include responsive(lg) {
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+            }
+            .navbar-nav {
+                align-items: center;
+                @include responsive(lg) {
+                    margin: 20px 0 0;
+                }
+                @include responsive(xl) {
+                    margin: 0;
+                }
+                .nav-item {
+                    @include responsive(lg) {
+                        padding: 0 10px;
+                    }
+                    @include responsive(xl) {
+                        padding: 0 15px;
+                    }
+                    .nav-link {
+                        padding: 0;
+                        color: #707070;
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        margin: 0 0 5px;
+                        text-transform: uppercase;
+                        @include responsive(lg) {
+                            font-size: 13px;
+                            line-height: 24px;
+                        }
+                        @include responsive(xl) {
+                            margin: 0;
+                            font-size: 14px;
+                            line-height: 24px;
+                        }
+                        &:hover {
+                            color: #d95930;
+                        }
+                    }
+                    &.active {
+                        .nav-link {
+                            color: #d95930;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.fixed {
+        background: $white;
+        box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);
+        .navbar {
+            padding: 5px 0;
+            @include responsive(xl) {
+                padding: 5px 0;
+            }
+        }
+    }
+}
