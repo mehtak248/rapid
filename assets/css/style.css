@@ -15256,8 +15256,8 @@ header.fixed .navbar {
   /* line 1, ../scss/_main.scss */
   .banner-block {
     margin: 175px 0 0;
-    height: 500px;
-    padding: 80px 0 0;
+    height: 600px;
+    padding: 90px 0 0;
   }
 }
 @media (min-width: 1600px) {
@@ -15277,7 +15277,7 @@ header.fixed .navbar {
 @media (min-width: 1200px) {
   /* line 21, ../scss/_main.scss */
   .banner-block .banner-subblock {
-    margin: 0 70px;
+    margin: 0 20px;
   }
 }
 @media (min-width: 1600px) {
