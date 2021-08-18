@@ -1,4 +1,15 @@
 $(document).ready(function() {
+  $('.navbar-nav .nav-link, .banner-block .btn').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top - 250
+    }, 500);
+    return false;
+  });
+
+  $('.navbar-toggler').on('click', function() {
+    $(this).toggleClass('active');
+  });
+
   // Product Thumbnail Slider
   // $('.slider-for').slick({
   //   slidesToShow: 1,
@@ -78,15 +89,15 @@ $(document).ready(function() {
   //     ]
   // });
 
-  // $(document).scroll(function() {
-  //     if ($(document).scrollTop() >= 25) {
-  //         $('header').addClass('fixed');
-  //         $('nav').addClass('js-scrolling');
-  //     } else {
-  //         $('header').removeClass('fixed');
-  //         $('nav').removeClass('js-scrolling');
-  //     }
-  // });
+  $(document).scroll(function() {
+      if ($(document).scrollTop() >= 25) {
+          $('header').addClass('fixed');
+          $('nav').addClass('js-scrolling');
+      } else {
+          $('header').removeClass('fixed');
+          $('nav').removeClass('js-scrolling');
+      }
+  });
 
   // $('#read-more').on('click', function() {
   //     var txt = $(".other-data").is(':visible') ? 'Read More' : 'Read Less';

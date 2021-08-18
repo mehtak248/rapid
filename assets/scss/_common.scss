@@ -64,11 +64,26 @@ ul {
 .btn-orange {
     padding: 10px;
     color: $white;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 13px;
     border-radius: 0;
     background-color: #d95930;
+    @include responsive(xsml) {
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    @include responsive(md) {
+        padding: 7px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    @include responsive(xl) {
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
 }
 
 .btn-orange:hover {
@@ -79,11 +94,26 @@ ul {
 .btn-white {
     padding: 10px;
     color: $primary_color;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 13px;
     border-radius: 0;
     background-color: $white;
+    @include responsive(xsml) {
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    @include responsive(md) {
+        padding: 7px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    @include responsive(xl) {
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
 }
 
 .btn-white:hover {
@@ -94,11 +124,26 @@ ul {
 .btn-black {
     padding: 10px;
     color: $white;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
-    line-height: 15px;
+    line-height: 13px;
     border-radius: 0;
     background-color: #201c1e;
+    @include responsive(xsml) {
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    @include responsive(md) {
+        padding: 7px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    @include responsive(xl) {
+        padding: 10px 15px;
+        font-size: 16px;
+        line-height: 16px;
+    }
 }
 
 .btn-black:hover {
@@ -161,60 +206,5 @@ ul {
         -ms-flex: 0 0 20%;
         flex: 0 0 20%;
         max-width: 20%;
-    }
-}
-
-// Custom Checkbox
-.list-left-block {
-    .form-group {
-        margin-bottom: 10px;
-        label {
-            margin: 0;
-            color: #38464D;
-            font-size: 14px;
-            line-height: 14px;
-            position: relative;
-            cursor: pointer;
-            @include responsive(lg) {
-                font-size: 12px;
-                line-height: 12px;
-            }
-            @include responsive(xl) {
-                font-size: 14px;
-                line-height: 14px;
-            }
-            &:before {
-                content:'';
-                -webkit-appearance: none;
-                background-color: transparent;
-                border: 1px solid #C4C4C4;
-                padding: 7px;
-                display: inline-block;
-                position: relative;
-                vertical-align: middle;
-                cursor: pointer;
-                margin-right: 10px;
-                border-radius: 2px;
-                background: #FFFFFF 0% 0% no-repeat padding-box;
-            }
-        }
-        input {
-            padding: 0;
-            height: initial;
-            width: initial;
-            margin-bottom: 0;
-            display: none;
-            cursor: pointer;
-            &:checked + label:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 2px;
-                left: 2px;
-                border: 5px solid #FF0909;
-                border-radius: 1px;
-                padding: 1px;
-            }
-        }
     }
 }

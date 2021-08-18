@@ -1,5 +1,9 @@
 footer {
     padding: 20px 0;
+    text-align: center;
+    @include responsive(sm) {
+        text-align: left;
+    }
     @include responsive(xl) {
         padding: 50px 0;
     }
@@ -16,21 +20,41 @@ footer {
     p {
         margin: 0;
         color: #201c1e;
-        font-size: 13px;
-        line-height: 20px;
-        font-weight: 300;
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: 400;
+        @include responsive(xsml) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        @include responsive(md) {
+            margin: 10px 0 0;
+        }
+        @include responsive(xl) {
+            margin: 0;
+        }
         @include responsive(xxl) {
             font-size: 16px;
             line-height: 22px;
         }
     }
     .contact-number {
-        margin: 0;
+        padding: 10px 0;
         color: #201c1e;
-        font-size: 14px;
+        font-size: 24px;
         line-height: 24px;
-        font-weight: 300;
+        font-weight: 400;
+        display: inline-block;
+        @include responsive(xsml) {
+            font-size: 39px;
+            line-height: 39px;
+        }
+        @include responsive(md) {
+            font-size: 18px;
+            line-height: 24px;
+        }
         @include responsive(xl) {
+            padding: 0;
             font-size: 32px;
             line-height: 32px;
         }

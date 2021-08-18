@@ -7,7 +7,7 @@
     <meta name="author" content="">
 
     <title>Rapid</title>
-
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
 
@@ -19,6 +19,7 @@
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="/">
                     <img src="assets/images/logo.png" class="img-fluid d-none d-lg-block" />
+                    <!-- <img src="assets/images/sticky-logo.png" class="img-fluid sticky-logo" /> -->
                     <img src="assets/images/mobile-logo.png" class="img-fluid mobile-logo d-lg-none" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +29,16 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="javascript:void(0);">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -46,17 +47,17 @@
     </header>
 
     <!-- Banner Block -->
-    <section class="banner-block" style="background-image: url(assets/images/banner.jpg);">
+    <section id="home" class="banner-block">
         <div class="container">
-            <div class="banner-subblock">
+            <div class="banner-subblock d-none d-lg-block">
                 <div class="row">
                     <div class="col-xl-12">
                         <h6>Welcome to</h6>
                         <h1>Rapid Security <br />Services, Inc</h1>
                         <p>Licensed, bonded, Insured Trusted, <br />Experienced and Reliable Security <br />Guard Company Since 2003</p>
                         <div class="banner-button-block">
-                            <a href="javascript:void(0);" class="btn btn-orange">GET FREE QUOTE</a>
-                            <a href="javascript:void(0);" class="btn btn-white">APPLY FOR JOB</a>
+                            <a href="#contact" class="btn btn-orange">GET FREE QUOTE</a>
+                            <a href="#contact" class="btn btn-white">APPLY FOR JOB</a>
                         </div>
                     </div>
                 </div>
@@ -64,8 +65,22 @@
         </div>
     </section>
 
+    <div class="banner-subblock d-lg-none">
+        <div class="row">
+            <div class="col-xl-12">
+                <h6>Welcome to</h6>
+                <h1>Rapid Security <br />Services, Inc</h1>
+                <p>Licensed, bonded, Insured Trusted, <br />Experienced and Reliable Security <br />Guard Company Since 2003</p>
+                <div class="banner-button-block">
+                    <a href="#contact" class="btn btn-orange">GET FREE QUOTE</a>
+                    <a href="#contact" class="btn btn-white">APPLY FOR JOB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Information Block -->
-    <section class="information-block">
+    <section id="about" class="information-block">
         <div class="container">
             <div class="information-subblock">
                 <div class="row">
@@ -105,7 +120,7 @@
     </section>
 
     <!-- Our Core Values -->
-    <section class="our-core-values-block">
+    <section id="services" class="our-core-values-block">
         <div class="container">
             <div class="heading-block">
                 <h1><span>Our core values</span></h1>
@@ -113,39 +128,79 @@
             <div class="our-core-values-subblock">
                 <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2dot4">
-                        <div class="core-image">
-                            <img src="assets/images/icon1.png" class="img-fluid" />
+                        <div class="row core-row">
+                            <div class="col-4 col-sm-12">
+                                <div class="core-image">
+                                    <img src="assets/images/icon1.png" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-12">
+                                <div class="core-content">
+                                    <h4>Comunication</h4>
+                                    <p>We communicate internally and externally with honesty and respect.</p>
+                                </div>
+                            </div>
                         </div>
-                        <h4>Comunication</h4>
-                        <p>We communicate internally and externally with honesty and respect.</p>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2dot4">
-                        <div class="core-image">
-                            <img src="assets/images/icon2.png" class="img-fluid" />
+                        <div class="row core-row">
+                            <div class="col-4 col-sm-12">
+                                <div class="core-image">
+                                    <img src="assets/images/icon2.png" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-12">
+                                <div class="core-content">
+                                    <h4>Accountability</h4>
+                                    <p>We are accountable by measuring ourselves against the highest standards of integrity and fiscal responsibility.</p>
+                                </div>
+                            </div>
                         </div>
-                        <h4>Accountability</h4>
-                        <p>We are accountable by measuring ourselves against the highest standards of integrity and fiscal responsibility.</p>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2dot4">
-                        <div class="core-image">
-                            <img src="assets/images/icon3.png" class="img-fluid" />
+                        <div class="row core-row">
+                            <div class="col-4 col-sm-12">
+                                <div class="core-image">
+                                    <img src="assets/images/icon3.png" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-12">
+                                <div class="core-content">
+                                    <h4>Transparency</h4>
+                                    <p>We pride ourselves on providing complete visibility into the successes, and sometimes failures, of our business as we grow.</p>
+                                </div>
+                            </div>
                         </div>
-                        <h4>Transparency</h4>
-                        <p>We pride ourselves on providing complete visibility into the successes, and sometimes failures, of our business as we grow.</p>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2dot4">
-                        <div class="core-image">
-                            <img src="assets/images/icon4.png" class="img-fluid" />
+                        <div class="row core-row">
+                            <div class="col-4 col-sm-12">
+                                <div class="core-image">
+                                    <img src="assets/images/icon4.png" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-12">
+                                <div class="core-content">
+                                    <h4>Quality</h4>
+                                    <p>We take ownership for the quality of our individual work but also take pride in what we deliver as a team.</p>
+                                </div>
+                            </div>
                         </div>
-                        <h4>Quality</h4>
-                        <p>We take ownership for the quality of our individual work but also take pride in what we deliver as a team.</p>
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 col-xl-2dot4">
-                        <div class="core-image">
-                            <img src="assets/images/icon5.png" class="img-fluid" />
+                        <div class="row core-row">
+                            <div class="col-4 col-sm-12">
+                                <div class="core-image">
+                                    <img src="assets/images/icon5.png" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-12">
+                                <div class="core-content">
+                                    <h4>Integrity</h4>
+                                    <p>We're honest, transparent and committed to doing what's best for our customers and our company.</p>
+                                </div>
+                            </div>
                         </div>
-                        <h4>Integrity</h4>
-                        <p>We're honest, transparent and committed to doing what's best for our customers and our company.</p>
                     </div>
                 </div>
             </div>
@@ -153,7 +208,7 @@
     </section>
 
     <!-- Contact Block -->
-    <section class="contact-block">
+    <section id="contact" class="contact-block">
         <div class="container">
             <div class="contact-subblock">
                 <div class="heading-block">
@@ -180,11 +235,11 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-6">
                                             <label class="medium">Company Name</label>
                                             <input type="text" class="form-control" />
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-6">
                                             <label class="medium">City, State</label>
                                             <input type="text" class="form-control" />
                                         </div>
@@ -259,11 +314,11 @@
     </section>
 
     <!-- Security Block -->
-    <section class="security-block" style="background-image: url(assets/images/bg-security.jpg);">
+    <section class="security-block">
         <div class="container">
             <div class="security-subblock">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-lg-4">
                         <div class="security-details">
                             <img src="assets/images/security.png" class="img-fluid" />
                             <div class="security-content">
@@ -272,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-lg-4">
                         <div class="security-details">
                             <img src="assets/images/security.png" class="img-fluid" />
                             <div class="security-content">
@@ -281,7 +336,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-lg-4">
                         <div class="security-details">
                             <img src="assets/images/security.png" class="img-fluid" />
                             <div class="security-content">
@@ -290,7 +345,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-lg-4">
                         <div class="security-details">
                             <img src="assets/images/security.png" class="img-fluid" />
                             <div class="security-content">
@@ -299,7 +354,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-lg-4">
                         <div class="security-details">
                             <img src="assets/images/security.png" class="img-fluid" />
                             <div class="security-content">
@@ -308,7 +363,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4 col-lg-4">
                         <div class="security-details">
                             <img src="assets/images/security.png" class="img-fluid" />
                             <div class="security-content">
@@ -325,36 +380,36 @@
     <!-- Security Solution Block -->
     <section class="security-solution-block">
         <div class="security-solution-left-block">
-            <img src="assets/images/service-line.png" class="img-fluid service-line" />
+            <img src="assets/images/service-line.png" class="img-fluid service-line d-none d-lg-block" />
             <h1>COVID-19 Access Control <br />Screening Security Solutions</h1>
             <p>As many companies adjust to the "new normal" of providing both safe and secure access to their properties, Rapid Response Security Services is delivering COVID-19 crisis-specific expertise that is immediately available. Based on these experiences, we have deployed an extensive set of best practices for COVID access control screening.</p>
             <div class="security-solution-icon-block">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-4 security-solution-icon-subblock icon-border">
+                    <div class="col-4 security-solution-icon-subblock icon-border">
                         <div class="icons">
                             <img src="assets/images/icon6.png" class="img-fluid" />
                         </div>
                         <h6>Social distancing <br />enforcement</h6>
                     </div>
-                    <div class="col-md-4 security-solution-icon-subblock icon-border">
+                    <div class="col-4 security-solution-icon-subblock icon-border">
                         <div class="icons">
                             <img src="assets/images/icon7.png" class="img-fluid" />
                         </div>
                         <h6>Face mask <br />enforcement</h6>
                     </div>
-                    <div class="col-md-4 security-solution-icon-subblock">
+                    <div class="col-4 security-solution-icon-subblock">
                         <div class="icons">
                             <img src="assets/images/icon8.png" class="img-fluid" />
                         </div>
                         <h6>Temperature <br />screening</h6>
                     </div>
-                    <div class="col-md-4 security-solution-icon-subblock icon-border">
+                    <div class="col-4 security-solution-icon-subblock icon-border">
                         <div class="icons">
                             <img src="assets/images/icon9.png" class="img-fluid" />
                         </div>
                         <h6>Max occupancy <br />enforcement</h6>
                     </div>
-                    <div class="col-md-4 security-solution-icon-subblock">
+                    <div class="col-4 security-solution-icon-subblock">
                         <div class="icons">
                             <img src="assets/images/icon10.png" class="img-fluid" />
                         </div>
@@ -379,7 +434,7 @@
             <h1>We provide array of security guard services in the following countries of California:</h1>
             <div class="security-guard-list">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <ul>
                             <li>Los Angeles</li>
                             <li>Ventura</li>
@@ -387,7 +442,7 @@
                             <li>Rive rside</li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <ul>
                             <li>San Bernardino</li>
                             <li>San Diego</li>
@@ -395,7 +450,7 @@
                             <li>San Francisco</li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <ul>
                             <li>Santa Clara</li>
                             <li>Monterey</li>
@@ -403,7 +458,7 @@
                             <li>San Mateo</li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-6 col-md-3">
                         <ul>
                             <li>Alameda</li>
                             <li>San Joaquin</li>
@@ -429,12 +484,12 @@
             <div class="row align-items-center">
                 <div class="col-md-5">
                     <div class="row footer-left-block">
-                        <div class="col-xl-3">
+                        <div class="col-md-3 d-none d-sm-block">
                             <a href="index.html" class="footer-logo">
                                 <img src="assets/images/footer-logo.png" class="img-fluid" />
                             </a>
                         </div>
-                        <div class="col-xl-9">
+                        <div class="col-md-9">
                             <p>Fully Insured and Bonded, State License#PPO 14971 <br />24/7 Armed & Unarmed Security Guards</p>
                         </div>
                     </div>

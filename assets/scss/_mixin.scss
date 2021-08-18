@@ -5,6 +5,9 @@
     @if $point == xxl {
         @media (min-width: 1600px) { @content ; }
     }
+    @if $point == xsml {
+        @media (min-width: 414px) and (max-width: 576px) { @content ; }
+    }
     @if $point == xl {
         @media (min-width: 1200px) { @content ; }
     }

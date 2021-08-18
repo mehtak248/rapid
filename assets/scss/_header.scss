@@ -5,13 +5,15 @@ header {
     right: 0;
     width: 100%;
     z-index: 9999;
-    background: $white;
     -webkit-transition: position 0.2s; 
     -moz-transition: position 0.2s; 
     -ms-transition: position 0.2s; 
     -o-transition: position 0.2s; 
     transition: position 0.2s;
     border-top: 10px solid #d95930;
+    @include responsive(lg) {
+        background: $white;
+    }
     @include responsive(xxxl) {
         border-top: 21px solid #d95930;
     }
@@ -23,6 +25,71 @@ header {
         .navbar-brand {
             padding: 0;
             max-width: 150px;
+            -webkit-transition: max-width 0.5s; 
+            -moz-transition: max-width 0.5s; 
+            -ms-transition: max-width 0.5s; 
+            -o-transition: max-width 0.5s; 
+            transition: max-width 0.5s; 
+            @include responsive(lg) {
+                /* height: 207px;
+                overflow: hidden;
+                -webkit-transition: height 0.5s; 
+                -moz-transition: height 0.5s; 
+                -ms-transition: height 0.5s; 
+                -o-transition: height 0.5s; 
+                transition: height 0.5s;  */
+                max-width: 100%;
+            }
+            // .sticky-logo {
+            //     display: none;
+            // }
+            img {
+                height: 39px;
+                -webkit-transition: height 0.5s; 
+                -moz-transition: height 0.5s; 
+                -ms-transition: height 0.5s; 
+                -o-transition: height 0.5s; 
+                transition: height 0.5s; 
+                @include responsive(lg) {
+                    height: 207px;
+                }
+            }
+        }
+        &.js-scrolling {
+            .navbar-collapse {
+                top: 21px;
+            }
+            .navbar-brand {
+                max-width: 60%;
+                -webkit-transition: max-width 0.5s; 
+                -moz-transition: max-width 0.5s; 
+                -ms-transition: max-width 0.5s; 
+                -o-transition: max-width 0.5s; 
+                transition: max-width 0.5s;
+                @include responsive(lg) {
+                    // height: 150px;
+                    // -webkit-transition: height 0.5s; 
+                    // -moz-transition: height 0.5s; 
+                    // -ms-transition: height 0.5s; 
+                    // -o-transition: height 0.5s; 
+                    // transition: height 0.5s;
+                    max-width: 100%;
+                }
+                // .sticky-logo {
+                //     display: inline-block;
+                // }
+                img {
+                    height: 30px;
+                    -webkit-transition: height 0.5s; 
+                    -moz-transition: height 0.5s; 
+                    -ms-transition: height 0.5s; 
+                    -o-transition: height 0.5s; 
+                    transition: height 0.5s;
+                    @include responsive(lg) {
+                        height: 150px;
+                    }
+                }
+            }
         }
         .navbar-toggler {
             &:focus,
@@ -38,25 +105,38 @@ header {
                 background-size: cover;
                 display: inline-block;
             }
+            &.active {
+                .navbar-toggler-icon {
+                    width: 11px;
+                    height: 11px;
+                    background-image: url(../images/close.png);
+                }
+            }
         } 
         .navbar-collapse {
-            background: rgb(255, 255, 255);
-            padding: 20px 0px;
-            margin: 18px 0 0;
+            margin: 19px 0 0;
+            background: $black;
+            position: absolute;
+            top: 60px;
+            left: -40px;
+            right: -40px;
             @include responsive(lg) {
                 margin: 0;
                 padding: 0;
+                position: static;
                 background-color: transparent;
             }
             .navbar-nav {
-                align-items: center;
+                display: block;
                 @include responsive(lg) {
+                    display: flex;
                     margin: 20px 0 0;
                 }
                 @include responsive(xl) {
                     margin: 0;
                 }
                 .nav-item {
+                    padding: 5px 35px;
                     @include responsive(lg) {
                         padding: 0 10px;
                     }
@@ -65,15 +145,16 @@ header {
                     }
                     .nav-link {
                         padding: 0;
-                        color: #707070;
-                        font-size: 16px;
+                        color: $white;
+                        font-size: 17.22px;
                         line-height: 20px;
                         font-weight: 400;
-                        margin: 0 0 5px;
                         text-transform: uppercase;
                         @include responsive(lg) {
                             font-size: 13px;
                             line-height: 24px;
+                            margin: 0 0 5px;
+                            color: $primary_color;
                         }
                         @include responsive(xl) {
                             margin: 0;
