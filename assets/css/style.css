@@ -15204,18 +15204,24 @@ header .navbar .navbar-brand img {
     transition: height 2s;
   }
 }
-/* line 111, ../scss/_header.scss */
+@media (min-width: 1600px) {
+  /* line 63, ../scss/_header.scss */
+  header .navbar.js-scrolling .navbar-brand {
+    height: 120px;
+  }
+}
+/* line 114, ../scss/_header.scss */
 header .navbar .navbar-toggler {
   position: absolute;
   right: 0;
   top: 20px;
 }
-/* line 115, ../scss/_header.scss */
+/* line 118, ../scss/_header.scss */
 header .navbar .navbar-toggler:focus, header .navbar .navbar-toggler:hover {
   border: 0;
   outline: 0;
 }
-/* line 120, ../scss/_header.scss */
+/* line 123, ../scss/_header.scss */
 header .navbar .navbar-toggler .navbar-toggler-icon {
   width: 20px;
   height: 17px;
@@ -15224,13 +15230,13 @@ header .navbar .navbar-toggler .navbar-toggler-icon {
   background-size: cover;
   display: inline-block;
 }
-/* line 129, ../scss/_header.scss */
+/* line 132, ../scss/_header.scss */
 header .navbar .navbar-toggler.active .navbar-toggler-icon {
   width: 11px;
   height: 11px;
   background-image: url(../images/close.png);
 }
-/* line 136, ../scss/_header.scss */
+/* line 139, ../scss/_header.scss */
 header .navbar .navbar-collapse {
   margin: 19px 0 0;
   background: #000000;
@@ -15240,7 +15246,7 @@ header .navbar .navbar-collapse {
   right: -40px;
 }
 @media (min-width: 992px) {
-  /* line 136, ../scss/_header.scss */
+  /* line 139, ../scss/_header.scss */
   header .navbar .navbar-collapse {
     margin: 0;
     padding: 0;
@@ -15248,40 +15254,40 @@ header .navbar .navbar-collapse {
     background-color: transparent;
   }
 }
-/* line 149, ../scss/_header.scss */
+/* line 152, ../scss/_header.scss */
 header .navbar .navbar-collapse .navbar-nav {
   display: block;
 }
 @media (min-width: 992px) {
-  /* line 149, ../scss/_header.scss */
+  /* line 152, ../scss/_header.scss */
   header .navbar .navbar-collapse .navbar-nav {
     display: flex;
     margin: 20px 0 0;
   }
 }
 @media (min-width: 1200px) {
-  /* line 149, ../scss/_header.scss */
+  /* line 152, ../scss/_header.scss */
   header .navbar .navbar-collapse .navbar-nav {
     margin: 0;
   }
 }
-/* line 158, ../scss/_header.scss */
+/* line 161, ../scss/_header.scss */
 header .navbar .navbar-collapse .navbar-nav .nav-item {
   padding: 5px 35px;
 }
 @media (min-width: 992px) {
-  /* line 158, ../scss/_header.scss */
+  /* line 161, ../scss/_header.scss */
   header .navbar .navbar-collapse .navbar-nav .nav-item {
     padding: 0 10px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 158, ../scss/_header.scss */
+  /* line 161, ../scss/_header.scss */
   header .navbar .navbar-collapse .navbar-nav .nav-item {
     padding: 0 15px;
   }
 }
-/* line 166, ../scss/_header.scss */
+/* line 169, ../scss/_header.scss */
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   padding: 0;
   color: #ffffff;
@@ -15291,7 +15297,7 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
 }
 @media (min-width: 992px) {
-  /* line 166, ../scss/_header.scss */
+  /* line 169, ../scss/_header.scss */
   header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     font-size: 13px;
     line-height: 24px;
@@ -15300,18 +15306,18 @@ header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   }
 }
 @media (min-width: 1200px) {
-  /* line 166, ../scss/_header.scss */
+  /* line 169, ../scss/_header.scss */
   header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
   }
 }
-/* line 184, ../scss/_header.scss */
+/* line 187, ../scss/_header.scss */
 header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #d95930;
 }
-/* line 189, ../scss/_header.scss */
+/* line 192, ../scss/_header.scss */
 header .navbar .navbar-collapse .navbar-nav .nav-item.active .nav-link {
   color: #d95930;
 }
