@@ -10,6 +10,11 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   });
 
+  $('.banner-slider').slick({
+    arrows: false,
+    autoplay: true
+  });
+
   // Product Thumbnail Slider
   // $('.slider-for').slick({
   //   slidesToShow: 1,

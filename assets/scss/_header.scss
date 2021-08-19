@@ -39,58 +39,75 @@ header {
                 -o-transition: height 0.5s; 
                 transition: height 0.5s;  */
                 max-width: 100%;
+                height: auto;
+                overflow: hidden;
+                -webkit-transition: height 2s; 
+                -moz-transition: height 2s; 
+                -ms-transition: height 2s; 
+                -o-transition: height 2s; 
+                transition: height 2s; 
             }
-            // .sticky-logo {
-            //     display: none;
+            // img {
+                // height: 39px;
+                // -webkit-transition: height 0.5s; 
+                // -moz-transition: height 0.5s; 
+                // -ms-transition: height 0.5s; 
+                // -o-transition: height 0.5s; 
+                // transition: height 0.5s; 
+                // @include responsive(lg) {
+                //     height: 207px;
+                // }
             // }
-            img {
-                height: 39px;
-                -webkit-transition: height 0.5s; 
-                -moz-transition: height 0.5s; 
-                -ms-transition: height 0.5s; 
-                -o-transition: height 0.5s; 
-                transition: height 0.5s; 
-                @include responsive(lg) {
-                    height: 207px;
-                }
-            }
         }
         &.js-scrolling {
-            .navbar-collapse {
-                top: 21px;
-            }
             .navbar-brand {
-                max-width: 60%;
-                -webkit-transition: max-width 0.5s; 
-                -moz-transition: max-width 0.5s; 
-                -ms-transition: max-width 0.5s; 
-                -o-transition: max-width 0.5s; 
-                transition: max-width 0.5s;
                 @include responsive(lg) {
-                    // height: 150px;
-                    // -webkit-transition: height 0.5s; 
-                    // -moz-transition: height 0.5s; 
-                    // -ms-transition: height 0.5s; 
-                    // -o-transition: height 0.5s; 
-                    // transition: height 0.5s;
-                    max-width: 100%;
-                }
-                // .sticky-logo {
-                //     display: inline-block;
-                // }
-                img {
-                    height: 30px;
-                    -webkit-transition: height 0.5s; 
-                    -moz-transition: height 0.5s; 
-                    -ms-transition: height 0.5s; 
-                    -o-transition: height 0.5s; 
-                    transition: height 0.5s;
-                    @include responsive(lg) {
-                        height: 150px;
-                    }
-                }
+                    height: 120px;
+                    overflow: hidden;
+                    -webkit-transition: height 2s; 
+                    -moz-transition: height 2s; 
+                    -ms-transition: height 2s; 
+                    -o-transition: height 2s; 
+                    transition: height 2s; 
+                }   
             }
         }
+        // &.js-scrolling {
+        //     .navbar-collapse {
+        //         top: 21px;
+        //     }
+        //     .navbar-brand {
+        //         max-width: 60%;
+        //         -webkit-transition: max-width 0.5s; 
+        //         -moz-transition: max-width 0.5s; 
+        //         -ms-transition: max-width 0.5s; 
+        //         -o-transition: max-width 0.5s; 
+        //         transition: max-width 0.5s;
+        //         @include responsive(lg) {
+        //             // height: 150px;
+        //             // -webkit-transition: height 0.5s; 
+        //             // -moz-transition: height 0.5s; 
+        //             // -ms-transition: height 0.5s; 
+        //             // -o-transition: height 0.5s; 
+        //             // transition: height 0.5s;
+        //             max-width: 100%;
+        //         }
+        //         // .sticky-logo {
+        //         //     display: inline-block;
+        //         // }
+        //         img {
+        //             height: 30px;
+        //             -webkit-transition: height 0.5s; 
+        //             -moz-transition: height 0.5s; 
+        //             -ms-transition: height 0.5s; 
+        //             -o-transition: height 0.5s; 
+        //             transition: height 0.5s;
+        //             @include responsive(lg) {
+        //                 height: 150px;
+        //             }
+        //         }
+        //     }
+        // }
         .navbar-toggler {
             &:focus,
             &:hover {
@@ -176,12 +193,5 @@ header {
     }
     &.fixed {
         background: $white;
-        box-shadow: 0 0 3px 1px rgba(0,0,0,0.5);
-        .navbar {
-            padding: 5px 0;
-            @include responsive(xl) {
-                padding: 5px 0;
-            }
-        }
     }
 }
