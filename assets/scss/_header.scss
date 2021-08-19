@@ -11,9 +11,7 @@ header {
     -o-transition: position 0.2s; 
     transition: position 0.2s;
     border-top: 10px solid #d95930;
-    @include responsive(lg) {
-        background: $white;
-    }
+    background-color: $white;
     @include responsive(xxxl) {
         border-top: 21px solid #d95930;
     }
@@ -47,22 +45,24 @@ header {
                 -o-transition: height 2s; 
                 transition: height 2s; 
             }
-            // img {
-                // height: 39px;
-                // -webkit-transition: height 0.5s; 
-                // -moz-transition: height 0.5s; 
-                // -ms-transition: height 0.5s; 
-                // -o-transition: height 0.5s; 
-                // transition: height 0.5s; 
-                // @include responsive(lg) {
-                //     height: 207px;
-                // }
-            // }
+            img {
+                -webkit-transition: height 0.5s; 
+                -moz-transition: height 0.5s; 
+                -ms-transition: height 0.5s; 
+                -o-transition: height 0.5s; 
+                transition: height 0.5s; 
+                @include responsive(lg) {
+                    height: 110px;
+                }
+                @include responsive(xxl) {
+                    height: 207px;
+                }
+            }
         }
         &.js-scrolling {
             .navbar-brand {
                 @include responsive(lg) {
-                    height: 120px;
+                    height: 63px;
                     overflow: hidden;
                     -webkit-transition: height 2s; 
                     -moz-transition: height 2s; 
@@ -109,6 +109,9 @@ header {
         //     }
         // }
         .navbar-toggler {
+            position: absolute;
+            right: 0;
+            top: 20px;
             &:focus,
             &:hover {
                 border: 0;
@@ -191,7 +194,7 @@ header {
             }
         }
     }
-    &.fixed {
-        background: $white;
-    }
+    // &.fixed {
+    //     background: $white;
+    // }
 }

@@ -22,7 +22,7 @@
     display: flex;
     @include responsive(lg) {
         background-image: url(../images/banner.jpg);
-        margin: 257px 0 0;
+        margin: 160px 0 0;
         background-position: inherit;
         height: 500px;
         padding: 90px 0 0;
@@ -32,6 +32,7 @@
     }
     @include responsive(xxl) {
         height: 800px;
+        margin: 257px 0 0;
         padding: 120px 0 0;
     }
     @include responsive(xxxl) {
@@ -175,6 +176,16 @@
                     font-size: 13px;
                     line-height: 13px;
                 }
+            }
+        }
+    }
+    .information-slider {
+        .information-content-block {
+            @include responsive(sm) {
+                margin: 0 15px;
+            }
+            .information-image-block {
+                margin: 15px 0 0;
             }
         }
     }
