@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.navbar-nav .nav-link, .banner-block .btn').on('click', function() {
+  $('.navbar-nav .nav-link, .banner-block .btn, footer .btn').on('click', function() {
     $('html, body').animate({
       scrollTop: $( $(this).attr('href') ).offset().top - 250
     }, 500);

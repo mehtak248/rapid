@@ -376,6 +376,8 @@
         }
     }
     .contact-subblock {
+        position: relative;
+        z-index: 9;
         @include responsive(xl) {
             max-width: 950px;
             margin-left: auto;
