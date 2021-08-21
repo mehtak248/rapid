@@ -481,9 +481,16 @@
                                 }
                             }
                         }
+                        &.error {
+                            color: #db633c;
+                            &:after {
+                                display: none;
+                            }
+                        }
                     }
                     .form-control {
                         border: 0;
+                        color: $white;
                         border-radius: 0;
                         background-color: #3c3c3c;
                     }
