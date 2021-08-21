@@ -12,7 +12,6 @@
   </head>
 
   <body class="home">
-    
     <!-- Header -->
     <header>
         <div class="container">
@@ -280,26 +279,27 @@
                     </div>
                 </div>
                 <div class="contact-form-block">
-                    <form class="contact-form">
+                    <form class="contact-form" id="frm_contact_form" method="post">
+                        <input type="hidden" name="action" value="get_enquiry">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Email Address</label>
-                                    <input type="email" class="form-control" />
+                                    <input type="email" name="email" class="form-control" />
                                 </div>
                                 <div class="form-group">
                                     <label>Name</label>
-                                    <input type="text" class="form-control" />
+                                    <input type="text" name="name" class="form-control" />
                                 </div>
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-6">
                                             <label class="medium">Company Name</label>
-                                            <input type="text" class="form-control" />
+                                            <input type="text" name="company_name" class="form-control" />
                                         </div>
                                         <div class="col-6">
                                             <label class="medium">City, State</label>
-                                            <input type="text" class="form-control" />
+                                            <input type="text" name="state_city" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
@@ -307,14 +307,14 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="short">What security services are you interested in?</label>
-                                    <input type="text" class="form-control" />
+                                    <input type="text" name="security_services" class="form-control" />
                                 </div>
                                 <div class="form-group">
                                     <label class="short">Word Verification</label>
-                                    <input type="text" class="form-control" />
+                                    <input type="text" name="captcha_verify" class="form-control" />
                                 </div>
                                 <div class="form-group button-group">
-                                    <button type="submit" class="btn btn-orange">Submit</button>
+                                    <button type="submit" id="btn_contact_submit" class="btn btn-orange">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -566,9 +566,12 @@
     </footer>
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.form.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/user.js"></script>
   </body>
 </html>
