@@ -309,13 +309,19 @@
                                     <label class="short">What security services are you interested in?</label>
                                     <input type="text" name="security_services" class="form-control" />
                                 </div>
-                                <div class="form-group">
-                                    <div class="recatch">
-                                        <canvas id="RecaptchCanvas"></canvas>
-                                        <button class="btn btn-orange btn-refresh-captch"><i class="fa fa-refresh" aria-hidden="true"></i></button>
-                                    </div>
+                                <div class="form-group captcha-group">
                                     <label class="short">Word Verification</label>
-                                    <input type="text" name="captcha_verify" class="form-control"/>
+                                    <div class="row">
+                                        <div class="col-5 col-sm-3 col-md-4 col-lg-3">
+                                            <div class="recatch">
+                                                <canvas id="RecaptchCanvas"></canvas>
+                                                <button class="btn btn-refresh-captch">Refresh captcha</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-sm-9 col-md-8 col-lg-9">
+                                            <input type="text" name="captcha_verify" class="form-control"/>
+                                        </div>
+                                    </div>
                                     <div>
                                         <label id="captcha_verify_error" class="error" style="display: none;"></label>
                                     </div>
