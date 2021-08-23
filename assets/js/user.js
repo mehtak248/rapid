@@ -28,7 +28,7 @@ $(document).ready(function() {
             const captchVal = captcha.valid($('input[name="captcha_verify"]').val());
             
             if(captchVal == false) {
-                captcha.refresh();
+                //captcha.refresh();
                 $('#captcha_verify_error').html('Please enter valid code.');
                 $('#captcha_verify_error').css('display', 'block');
                 return false;
