@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -9,9 +9,9 @@
     <title>Rapid</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link href="assets/css/style.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body class="home">
+<body class="home">
     <!-- Header -->
     <header>
         <div class="container">
@@ -310,11 +310,33 @@
                                     <input type="text" name="security_services" class="form-control" />
                                 </div>
                                 <div class="form-group">
+                                    <div class="recatch">
+                                        <canvas id="RecaptchCanvas"></canvas>
+                                        <button class="btn btn-orange btn-refresh-captch"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                                    </div>
                                     <label class="short">Word Verification</label>
-                                    <input type="text" name="captcha_verify" class="form-control" />
+                                    <input type="text" name="captcha_verify" class="form-control"/>
+                                    <div>
+                                        <label id="captcha_verify_error" class="error" style="display: none;"></label>
+                                    </div>
                                 </div>
                                 <div class="form-group button-group">
                                     <button type="submit" id="btn_contact_submit" class="btn btn-orange">Submit</button>
+                                </div>
+                                <div class="form-group button-group">
+                                    <div class="alert alert-success alert-dismissible d-none" role="alert">
+                                        You have successfully submitted details
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="alert alert-danger alert-dismissible d-none" role="alert">
+                                        Sorry, Something went wrong.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -571,7 +593,9 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery-captcha.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/user.js"></script>
-  </body>
+</body>
+
 </html>
