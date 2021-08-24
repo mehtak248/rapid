@@ -8,22 +8,22 @@ error_reporting(E_ALL);
 require_once("../phpmailer/vendor/autoload.php");
 
 if(!defined("SMTP_HOST"))
-    define("SMTP_HOST",'');
+    define("SMTP_HOST",'mail.rapidrsg.com');
 
 if(!defined("SMTP_USERNAME"))
-    define("SMTP_USERNAME",'');
+    define("SMTP_USERNAME",'info@rapidrsg.com');
 
 if(!defined("SMTP_PASSWORD"))
-    define("SMTP_PASSWORD",''); //k2fmGYzn9E 
+    define("SMTP_PASSWORD",'INfo@2021'); //k2fmGYzn9E 
 
 if(!defined("SMTP_SECURE"))
-    define("SMTP_SECURE",'');
+    define("SMTP_SECURE",'ssl');
 
 if(!defined("SMTP_PORT"))
-    define("SMTP_PORT",587);
+    define("SMTP_PORT", 465);
 
 if(!defined("DEFAULT_EMAIL"))
-    define("DEFAULT_EMAIL", "");
+    define("DEFAULT_EMAIL", "info@rapidrsg.com");
 
 
 if(isset($_POST['action']) && $_POST['action'] == 'get_enquiry') {
@@ -50,7 +50,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'get_enquiry') {
     $Html .= "</body></html>";
 
     $to = 'info@rapidrsg.com';
-
+    
     $subject   = 'Contact form Inquiry - Rapid';
     
     //Send the mail Using SMTP.
@@ -109,8 +109,6 @@ function sendmail($toemail, $fromemail, $subject, $message, $fromname = '', $ton
 
     $mail->Body = "".$message."";
     $mail->AltBody = '';
-
-    // echo SMTP_HOST. ' - '. SMTP_USERNAME. ' - '. SMTP_PASSWORD . ' - '. SMTP_SECURE. ' - '.SMTP_PORT; 
 
     if(!$mail->send()) {
         return false;
